@@ -316,7 +316,13 @@
         </div>
         <!-- /.right-sidebar -->
     </div>
-    <script src="https://github.com/tonishiva/socialnetworkdraft/blob/master/scripts/main.js"></script>
+    <script>
+    const menuBtn = document.querySelector('.m-menu');
+    const menuSidebar = document.querySelector('.menu-sidebar');
+    menuBtn.addEventListener('click', function() {
+        menuSidebar.classList.toggle('active');
+    });
+    </script>
 </body>
 
 </html>
